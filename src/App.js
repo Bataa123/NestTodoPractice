@@ -1,10 +1,12 @@
 import React from 'react';
-
+import { TodoProvider } from './components/context'
 
 function App() {
   return (
-    <div className="App">
-    </div>
+    <TodoProvider>
+      <div className="App">
+      </div>
+    </TodoProvider>
   );
 }
 
