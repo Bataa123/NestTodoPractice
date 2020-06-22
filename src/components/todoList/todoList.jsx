@@ -8,14 +8,23 @@ const TodoList = () => {
     }
     return (
         <div className="big">
-            <div className="todoList">Todo
-                <img className="options" src={Options} alt="options"/>
+            <div className="todoList">
+                <div className="card">
+                    Todo
+                    <img className="options" src={Options} alt="options" />
+                </div>
             </div>
-            <div className="todoList">In Progress
-                <img className="options" src={Options} alt="options"/>
+            <div className="todoList">
+                <div className="card">
+                    In progress
+                    <img className="options" src={Options} alt="options" />
+                </div>
             </div>
-            <div className="todoList">Done
-                <img className="options" src={Options} alt="options"/>
+            <div className="todoList">
+                <div className="card">
+                    Done
+                    <img className="options" src={Options} alt="options" />
+                </div>
             </div>
             <div className="plusCard" onClick={plusCard}>+</div>
         </div>
