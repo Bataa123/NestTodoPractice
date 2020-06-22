@@ -1,17 +1,16 @@
-import React, { useContext } from 'react';
+import React from 'react';
 
-const AddTodo = () => {
-    let tdata = useContext(todo);
-    let pdata = useContext(prog);
-    let ddata = useContext(done);
+const AddTodo = (props) => {
 
-    tdata.forEach(el => {
-        return (
-            <div className='todo'>
-                {el}
-            </div>
-        )
-    })
+    let { listname } = props;
+
+    return (
+        <div className = 'container'>
+            {listname.map((el, i) => {
+                return <div className='list' key={i}>{el}</div>
+            })}
+        </div>
+    )
     
     // console.log(data)
     // return (
