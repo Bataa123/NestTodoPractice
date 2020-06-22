@@ -1,20 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react'
 
-const AddTodo = (props) => {
+const AddTodo = ({ listname, changeFunction }) => {
+    const [text, setText] = useState();
 
-    let { listname } = props;
-
+    const newText = () => {
+        let array = listname;
+        array.push(text)
+        changeFunction(array)
+        // console.log(listname)
+    }
     return (
-        <div className = 'container'>
-            {listname.map((el, i) => {
-                return <div className='list' key={i}>{el}</div>
-            })}
+        <div>
+            <button onClick={newText}>Add another card</button>
+            <input onChange={(e) => setText(e.target.value)} className='input' />
         </div>
     )
-    
-    // console.log(data)
-    // return (
-    // )
 }
 
 export default AddTodo;

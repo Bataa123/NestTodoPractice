@@ -4,14 +4,14 @@
     justify-content: center;
     height: 100vh;
     .todoList {
-        height: 70px;
+        height: auto;
         width: 200px;
         margin-left: 10px;
         padding: 10px;
         background-color: rgb(211, 211, 211);
         border-radius: 5px;
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
         .options {
             height: 20px;
             width: 30px;
@@ -19,6 +19,7 @@
         }
     }
     .plusCard {
+        cursor: pointer;
         height: 70px;
         width: 200px;
         background-color: gray;
@@ -30,5 +31,16 @@
         font-size: 50px;
         color: white;
     }
+    .card {
+        width: 100%;
+        background-color: rgb(211, 211, 211);
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
+
+// .test {
+//     height: 100px;
+//     width: 100px;
+// }
