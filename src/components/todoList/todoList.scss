@@ -1,0 +1,34 @@
+.big {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    .todoList {
+        height: 70px;
+        width: 200px;
+        margin-left: 10px;
+        padding: 10px;
+        background-color: rgb(211, 211, 211);
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-between;
+        .options {
+            height: 20px;
+            width: 30px;
+            cursor: pointer;
+        }
+    }
+    .plusCard {
+        height: 70px;
+        width: 200px;
+        background-color: gray;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 10px;
+        font-size: 50px;
+        color: white;
+    }
+}
+
